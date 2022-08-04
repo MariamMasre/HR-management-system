@@ -22,38 +22,40 @@
 
         
        </header>
-       <footer>
-        <b:if cond='data:view.isSingleItem'>
-        <div class="social-share">
-        <ul>
-          <li class="share-now"><i class="fas fa-share-alt"></i></li>
-          <li>
-              <a expr:href='"https://www.facebook.com/sharer.php?u=" + data:post.url.canonical' target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
-          </li>
-          <li>
-              <a expr:href='"https://twitter.com/intent/tweet?url=" + data:post.url.canonical + "&amp;text=" + data:post.title' rel="nofollow" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
-          </li>
-          <li>
-              <a expr:href='"https://www.linkedin.com/shareArticle?url=" + data:post.url.canonical' rel="nofollow" target="_blank" title="Linkedin"><i class="fab fa-linkedin-in"></i></a>
-          </li>
-          <li>
-              <a expr:href='"https://www.pinterest.com/pin/create/button/?url=" + data:post.url.canonical + "&amp;media=" + data:post.featuredImage + "&amp;description=" + data:post.title' rel="nofollow" target="_blank" title="Pinterest">
-                  <i class="fab fa-pinterest-p"></i>
-              </a>
-          </li>
-          <li>
-              <a expr:href='"https://api.whatsapp.com/send?text=" + data:post.title + " | " + data:post.url.canonical' rel="nofollow" target="_blank" title="Whatsapp"><i class="fab fa-whatsapp"></i></a>
-          </li>
-          <li>
-              <a expr:href='"https://reddit.com/submit?url=" + data:post.url.canonical + "&amp;title=" + data:post.title' rel="nofollow" target="_blank" title="Reddit"><i class="fab fa-reddit-alien"></i></a>
-          </li>
-          
-      </ul>
-  </div>
-  <!--./social-share-->
-</b:if>
-       </footer>
-       <script src="./app.js"></script>
+       
+       
 </body>
+<script src="./app.js"></script>
+<footer>
+    <b:if cond='data:view.isSingleItem'>
+    <div class="social-share">
+    <ul>
+      <li class="share-now"><i class="fas fa-share-alt"></i></li>
+      <li>
+          <a expr:href='"https://www.facebook.com/sharer.php?u=" + data:post.url.canonical' target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+      </li>
+      <li>
+          <a expr:href='"https://twitter.com/intent/tweet?url=" + data:post.url.canonical + "&amp;text=" + data:post.title' rel="nofollow" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+      </li>
+      <li>
+          <a expr:href='"https://www.linkedin.com/shareArticle?url=" + data:post.url.canonical' rel="nofollow" target="_blank" title="Linkedin"><i class="fab fa-linkedin-in"></i></a>
+      </li>
+      <li>
+          <a expr:href='"https://www.pinterest.com/pin/create/button/?url=" + data:post.url.canonical + "&amp;media=" + data:post.featuredImage + "&amp;description=" + data:post.title' rel="nofollow" target="_blank" title="Pinterest">
+              <i class="fab fa-pinterest-p"></i>
+          </a>
+      </li>
+      <li>
+          <a expr:href='"https://api.whatsapp.com/send?text=" + data:post.title + " | " + data:post.url.canonical' rel="nofollow" target="_blank" title="Whatsapp"><i class="fab fa-whatsapp"></i></a>
+      </li>
+      <li>
+          <a expr:href='"https://reddit.com/submit?url=" + data:post.url.canonical + "&amp;title=" + data:post.title' rel="nofollow" target="_blank" title="Reddit"><i class="fab fa-reddit-alien"></i></a>
+      </li>
+      
+  </ul>
+</div>
+<!--./social-share-->
+</b:if>
+   </footer>
 
 </html>
