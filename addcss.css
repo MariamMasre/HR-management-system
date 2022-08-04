@@ -1,11 +1,17 @@
-*{
-    margin: 0;
-    padding: 0;
-}
+
 body{
     background: linear-gradient(rgb(4, 35, 41),rgb(38, 195, 201));
     height: 100vh;
     font-family:'Franklin Gothic Medium';
+}
+p{
+  
+    text-transform: uppercase;
+   
+    font-size: small;
+    align-items: center;
+    font-family:'Franklin Gothic Medium';
+   
 }
 a{
     text-decoration: none;

@@ -10,63 +10,57 @@ function salary(max,min){
     var s = a- (7.5*a/100) 
     return s;
 }
+const allEmployee = [];
+function Employee(full_Name ,department ,level,salary){
+   this.employee_ID = Employee_ID();
+   this.full_Name = full_Name;
+   this.department = department;
+   this.level = level;
+   this.salary=salary;
 
-const employee1 ={
-    Employee_ID:Employee_ID(),
-    Full_Name:  "Ghazi Samer",
-    Department:"Administration",
-    Level:"Senior",
-    Salary : salary(2000,1500),
-}
 
-const employee2 ={
-    Employee_ID:Employee_ID(),
-    Full_Name:  "Lana Ali",
-    Department:"Finance",
-    Level:"Senior",
-    Salary : salary(2000,1500),
-}
-
-const employee3 ={
-    Employee_ID:Employee_ID(),
-    Full_Name: "Tamara Ayoub" ,
-    Department:"Marketing",
-    Level:"Senior",
-    Salary : salary(2000,1500),
-}
-
-const employee4 ={
-    Employee_ID:Employee_ID(),
-    Full_Name:  "Safi Walid",
-    Department:"Administration",
-    Level:"Mid-Senior",
-    Salary : salary(1500,1000),
-}
-const employee5 ={
-    Employee_ID:Employee_ID(),
-    Full_Name:"Omar Zaid"  ,
-    Department:"Development",
-    Level:"Senior",
-    Salary : salary(2000,1500),
-}
-const employee6 ={
-    Employee_ID:Employee_ID(),
-    Full_Name:  "Rana Saleh",
-    Department:"Development",
-    Level:"Junior",
-    Salary : salary(1000,500),
-}
-
-const employee7 ={
-    Employee_ID:Employee_ID(),
-    Full_Name:  "Hadi Ahmad",
-    Department:"Finance",
-    Level:"Mid-Senior",
-    Salary :salary(1500,1000),
+     allEmployee.push(this);
 }
 
 
+const Ghazi =new Employee("Ghazi Samer","Administration","Senior",salary(2000,1500));
 
+const Lana =new Employee("Lana Ali","Finance","Senior",salary(2000,1500));
+
+const Tamara =new Employee("Tamara Ayoub","Marketing","Senior",salary(2000,1500));
+
+const Safi =new Employee("Safi Walid","Administration","Mid-Senior",salary(1500,1000));
+
+const Omar =new Employee("Omar Zaid","Development","Senior",salary(2000,1500));
+
+const Rana =new Employee("Rana Saleh","Development","Junior",salary(1000,500));
+
+const Hadi =new Employee("Hadi Ahmad","Finance","Mid-Senior",salary(1500,1000));
+
+
+
+console.log(allEmployee);
+console.log(document);
+console.dir(document);
+
+document.write('<hl>Employee</hl>');
+Employee.prototype.printEmp = function(){
+document.write(`<p> full Name: ${this.full_Name}  </p>`);
+document.write(`<p>department:  ${this.department} </p>`);
+document.write(`<p>salary: ${this.salary}</p>`);
+
+}
+Ghazi.printEmp();
+Lana.printEmp();
+Tamara.printEmp();
+Safi.printEmp();
+Omar.printEmp();
+Rana.printEmp();
+Hadi.printEmp();
+
+
+
+/*
 
 console.log ("Employee name: " +employee1.Full_Name);
 console.log ("Employee salary: "+employee1.Salary );
@@ -94,4 +88,4 @@ console.log ("");
 
 console.log ("Employee name: " +employee7.Full_Name);
 console.log ("Employee salary: "+employee7.Salary);
-console.log ("");
+console.log ("");*/ 
