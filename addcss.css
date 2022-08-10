@@ -10,9 +10,10 @@ p{
    
     font-size: small;
     align-items: center;
-    font-family:'Franklin Gothic Medium';
+    
    
 }
+
 a{
     text-decoration: none;
     color:floralwhite;
@@ -30,6 +31,7 @@ header .logo{
     font-size: 25px;
     text-transform: uppercase;
 }
+
 header ul{
     display: flex;
     justify-content: center;
@@ -47,9 +49,8 @@ header ul li a{
         background: #FFE4E1;
         color: rgb(4, 35, 41);
     }
-
     .social-share{display:block;overflow:hidden;margin:5px ; }
-    .social-share ul{margin:500px;padding:0px;list-style:none}
+    .social-share ul{margin:100px;padding:0px;list-style:none}
     li.share-now i{font-size:15px;padding: 5px;height:20px;width:20px;text-align:center}
     .social-share ul li{float:left;margin-left:1rem}
     .social-share ul li a i{color:#fff;font-size:15px;padding: 5px;height:20px;width:20px;text-align:center;border-radius:25%;opacity:2}
