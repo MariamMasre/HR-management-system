@@ -30,43 +30,58 @@ function Employee(full_Name ,department ,level,image){
 }
 
 
+let Ghazi =new Employee("Ghazi Samer","Administration","Senior","./img/1.jpg");
 
-let Ghazi =new Employee("Ghazi Samer","Administration","Senior","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7wRXU4CQedaIh-xkyDQVCQDCj53qBtLotwg&usqp=CAU");
-
-let Lana =new Employee("Lana Ali","Finance","Senior","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwyhoK29O6ftEm3FgW8UuDsMp93Q-kt7g2_A&usqp=CAU");
-
-let Tamara =new Employee("Tamara Ayoub","Marketing","Senior","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWBb4Y3dyqiS4TjnxRNW4tPJp1HOalQmmGLA&usqp=CAU");
-
-let Safi =new Employee("Safi Walid","Administration","Mid-Senior","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5994v90BESIr3GLUqPJOLPJdzuLuBrflBlQ&usqp=CAU");
-
-let Omar =new Employee("Omar Zaid","Development","Senior","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSS1vLskmLNHsXq_-K6sWZAbY6SCstnv3HSzg&usqp=CAU");
-
-let Rana =new Employee("Rana Saleh","Development","Junior","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcd_E2ZH8x7VdlwTJSMuv4bU1PmHRRT9o9ZQ&usqp=CAU");
-
-let Hadi =new Employee("Hadi Ahmad","Finance","Mid-Senior","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTuhaOEcikpG4bvYVAudPfodo1gvnSexlURA&usqp=CAU");
+let Lana =new Employee("Lana Ali","Finance","Senior","./img/2.jpg");
 
 
+let Tamara =new Employee("Tamara Ayoub","Marketing","Senior","./img/3.jpg");
 
+let Omar =new Employee("Omar Zaid","Development","Senior","./img/5.jpg");
+
+let Safi =new Employee("Safi Walid","Administration","Mid-Senior","./img/4.jpg");
+
+let Hadi =new Employee("Hadi Ahmad","Finance","Mid-Senior","./img/8.jpg");
+
+let Rana =new Employee("Rana Saleh","Development","Junior","./img/6.jpg");
 /*
 console.log(document);
 console.dir(document);*/
 
 
 
-document.write('<hl>Employee</hl>');
-Employee.prototype.render = function(){
-document.write(`<p > full Name: ${this.full_Name}  </p>`);
-document.write(`<p >department:  ${this.department} </p>`);
-document.write(`<p  >salary: ${this.salary}</p>`);
+document.getElementsByClassName("container");
 
-}
-Ghazi.render();
-Lana.render();
-Tamara.render();
-Safi.render();
-Omar.render();
-Rana.render();
-Hadi.render();
-console.log(allEmployee);
+
+
+    const card = document.getElementsByClassName("card");
+    for (let i = 0; i <allEmployee.length; i++) {
+        const imgEl = document.createElement("img");
+        imgEl.src =allEmployee[i].image;
+        imgEl.alt = allEmployee[i].full_Name;
+        card[i].appendChild(imgEl);
+         
+    
+    }
+         
+         
+    
+           const heEl = document.getElementsByTagName("h2");
+           for (let i = 0; i <allEmployee.length; i++) {
+            
+            heEl[i].textContent = allEmployee[i].full_Name;
+
+    
+               }
+               const pEl = document.getElementsByTagName("p");
+               for (let i = 0; i <allEmployee.length; i++) {
+                
+                pEl[i].textContent =  allEmployee[i].salary;
+    
+                   }
+               
+     
+
+
 
 

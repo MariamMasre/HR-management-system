@@ -6,7 +6,7 @@
 }
 body{
     background: linear-gradient(rgb(4, 35, 41),rgb(105, 201, 201));
-    height: 100vh;
+   
     font-family:'Franklin Gothic Medium';
    
 }
@@ -14,6 +14,7 @@ a{
     text-decoration: none;
     color: rgb(240, 234, 241);
 }
+
 header{
    
     width: 95%;
@@ -44,6 +45,51 @@ header ul li{
         header ul li a:hover,.active{
             background: #FFE4E1;
             color: #4B0082;
+        }
+
+        .container{
+            display:block;
+            justify-content: center;
+            flex-wrap:wrap;
+            padding:90px ;
+
+        }
+        .card{
+            background: #FFE4E1;
+            width: 270px;
+            
+            margin: 10px;
+            border-radius: 15px;
+        }
+
+        .img{
+           
+            height: 170px;
+            margin-bottom: 15px;
+           background-size: cover;
+           border-radius: 15px 15px 0 0;
+
+        }
+        .card p{
+            padding: 10px;
+        }
+        .card a{
+            margin-bottom: 15px;
+            border-radius: 15px 15px 0 0;
+            background-color: #4B0082;
+            padding: 15px 20px;
+            display: block;
+            text-align: center;
+            margin: 20px 50px;
+            text-decoration: none;
+        }
+        .card:hover{
+            background-color: #96296c;
+            color: rgb(58, 11, 58);
+            cursor: pointer;
+            transform: scale(1.03);
+            transition: all is ease;
+
         }
        
         
